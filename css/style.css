@@ -381,15 +381,12 @@ p {
     font-size: 56px;
     line-height: 80px;
     text-transform: lowercase;
-    
     text-align: center;
-
-    border: 1px solid #FFFFFF;
+    border: none;
     border-radius: 100px;
 
     color: #FFFFFF;
-
-    background-color: transparent;
+    background-color: #A24DE8;
 }
 
 /* Popup Success */
@@ -413,8 +410,8 @@ p {
     top: 0;
     left: 0;
 
-    opacity: 0;
-    visibility: hidden;
+    /* opacity: 0;
+    visibility: hidden; */
     z-index: 999;
 
     transition: all 0.8s ease 0s;
@@ -457,9 +454,9 @@ p {
 
     color: #FFFFFF;
 
-    opacity: 0;
+    /* opacity: 0; */
     transition: all 0.8s ease 0s;
-    transform: translate(0px, -100%);
+    /* transform: translate(0px, -100%); */
 }
 
 .success__container {
@@ -467,15 +464,19 @@ p {
     justify-content: space-between;
     align-items: center;
 
+    margin-bottom: 80px;
+
 }
 
 .success__container h2 {
     width: 90%;
-    margin-bottom: 60px;
 
     font-family: 'Fjalla One', sans-serif;
-    font-size: 80px;
-    line-height: 101px;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 56px;
+    /* or 100% */
+    
     letter-spacing: -0.04em;
 }
 
@@ -501,6 +502,61 @@ p {
     margin-bottom: 80px;
 }
 
+.success__text .text-title {
+    margin-bottom: 15px;
+}
+
+.success__text .text-description {
+    width: 80%;
+}
+
+.data-container {
+    display: flex;
+    font-size: 20px;
+    line-height: 24px;
+
+    padding-bottom: 40px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #CECECE;
+}
+
+.data-container .name {
+    font-size: 16px;
+    line-height: 20px;
+    color: #A2A2A2;
+
+    margin-bottom: 5px;
+}
+
+.data-container .left {
+    margin-right: 90px;
+}
+
+.data-container .right .time {
+    display: flex;
+    align-items: center;
+}
+
+.data-container .right .name {
+    margin-left: 25px;
+}
+
+.data-container .right .time .arrow {
+    width: 8px;
+    height: 32px;
+    background-image: url("../images/arrow-2.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin-right: 18px;
+}
+
+.data-container .right .time .container {
+    display: flex;
+    flex-direction: column;
+}
+
 .success__btn-close {
     width: 173px;
     height: 83px;
@@ -511,8 +567,8 @@ p {
     line-height: 80px;
     text-transform: lowercase;
     text-align: center;
-
-    border: 1px solid #FFFFFF;
+    background-color: #A24DE8;
+    border: none;
 }
 
 
