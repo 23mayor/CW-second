@@ -410,8 +410,8 @@ p {
     top: 0;
     left: 0;
 
-    /* opacity: 0;
-    visibility: hidden; */
+    opacity: 0;
+    visibility: hidden;
     z-index: 999;
 
     transition: all 0.8s ease 0s;
@@ -454,9 +454,9 @@ p {
 
     color: #FFFFFF;
 
-    /* opacity: 0; */
+    opacity: 0;
     transition: all 0.8s ease 0s;
-    /* transform: translate(0px, -100%); */
+    transform: translate(0px, -100%);
 }
 
 .success__container {
@@ -474,9 +474,7 @@ p {
     font-family: 'Fjalla One', sans-serif;
     font-weight: 400;
     font-size: 56px;
-    line-height: 56px;
-    /* or 100% */
-    
+    line-height: 56px;    
     letter-spacing: -0.04em;
 }
 
