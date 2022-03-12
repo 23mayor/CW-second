@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="background">
+            <div class="header">
+                <div class="logo"></div>
+                <div class="info">
+                    <a href="#" class="signup-link">Sign Up</a>
+                    <a href="#" class="login-link">Login</a>
+                </div>
+            </div>
+            <div class="content">
+                <h2>CollectiveWEB.<br>New reality for your business</h2>
+                <div class="text">
+                    <p class="first">
+                        The main website is under construction.
+                    </p>
+                    <p class="second">                    
+                        We are in the process of implementing important updates to make your virtual journey smoother.<br>
+                        Book a guided demo session through CollectiveWEB virtual space, or go back to our old website.
+                    </p>
+                </div>
+                <div class="container">
+                    <a href="#popup" class="link">book a demo</a>
+                    <a href="#popup" class="link">go back</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="popup" class="popup">
+        <a href="#join" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <div class="popup__container">
+                    <h2>Registration</h2>
+                    <a href="#join" class="popup__close"></a>
+                </div>
+                <form action="" method="get" class="formWithValidation">
+                    <div class="popup__form">
+                        <label class="popup__text" for="name">Name</label>
+                        <input class="name field" type="text" placeholder="Your name" name="name">
+
+                        <label class="popup__text" for="email">Email</label>
+                        <input class="email field" type="email" placeholder="Your email" name="email" required>
+
+                        <div class="popup__timedata">
+                            <div class="popup__date">
+                                <span>Date</span>
+                                <div class="select">
+                                    <div class="select__header">
+                                        <span class="select__current">Pick a date</span>
+                                        <div class="select__icon"></div>
+                                    </div>
+                                    <div class="select__body">
+                                        <div class="select__item">13 march</div>
+                                        <div class="select__item">14 march</div>
+                                        <div class="select__item">15 march</div>
+                                        <div class="select__item">16 march</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup__select">
+                                <span>Time</span>
+                                <div class="select">
+                                    <div class="select__header">
+                                        <span class="select__current">Select a time</span>
+                                        <div class="select__icon"></div>
+                                    </div>
+                                    <div class="select__body">
+                                        <div class="select__item">12:00</div>
+                                        <div class="select__item">13:00</div>
+                                        <div class="select__item">14:00</div>
+                                        <div class="select__item">15:00</div>
+                                        <div class="select__item">16:00</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="validateBtn" type="submit">register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="success" class="success">
+        <a href="#join" class="success__area"></a>
+        <div class="success__body">
+            <div class="success__content">
+                <div class="success__container">
+                    <h2>
+                        Thank you<br>
+                        You have successfully
+                        registered
+                    </h2>
+                    <a href="#hero" class="success__close"></a>
+                </div>
+                <p class="success__text">
+                    Your slot is 4 March 2022 at 15:00 (GMT+4, UAE).<br>
+                    Link on the event has been sent to your email.
+                </p>
+                <a href="#join" class="success__btn-close">close</a>
+            </div>
+        </div>
+    </div>
+    <script src="select.js"></script>
+    <script src="validation.js"></script>
+</body>
+</html>
