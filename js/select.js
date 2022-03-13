@@ -21,6 +21,11 @@ let select = function () {
             currentText = select.querySelector('.select__current');
         currentText.innerText = text;
         select.classList.remove('is-active');
+
+        Array.from(this.parentNode.children).forEach(c => {
+            c.classList.remove('selected')
+        })
+        this.classList.add('selected')
     }
 };
 

@@ -13,8 +13,8 @@
             <div class="header">
                 <div class="logo"></div>
                 <div class="info">
-                    <a href="#" class="signup-link">Sign Up</a>
-                    <a href="#" class="login-link">Login</a>
+                    <a href="#" class="signup-link" onclick="onSignButtonClick('SIGN_UP')">Sign Up</a>
+                    <a href="#" class="login-link" onclick="onSignButtonClick('SIGN_IN')">Login</a>
                 </div>
             </div>
             <div class="content">
@@ -30,7 +30,7 @@
                 </div>
                 <div class="container">
                     <a href="#popup" class="link">book a demo</a>
-                    <a class="link">go back</a>
+                    <a class="link" href="https://collectiveweb.live/" target="_blank">go back</a>
                 </div>
             </div>
             <div class="video-block">
@@ -60,37 +60,29 @@
                         <div class="popup__timedata">
                             <div class="popup__date">
                                 <span>Date</span>
-                                <div class="select">
+                                <div class="select date">
                                     <div class="select__header">
                                         <span class="select__current">Pick a date</span>
                                         <div class="select__icon"></div>
                                     </div>
-                                    <div class="select__body">
-                                        <div class="select__item">13 march</div>
-                                        <div class="select__item">14 march</div>
-                                        <div class="select__item">15 march</div>
-                                        <div class="select__item">16 march</div>
+                                    <div class="select__body" id="dateOptionsList">
+
                                     </div>
                                 </div>
                             </div>
                             <div class="popup__select">
                                 <span>Time</span>
-                                <div class="select">
+                                <div class="select time">
                                     <div class="select__header">
                                         <span class="select__current">Select a time</span>
                                         <div class="select__icon"></div>
                                     </div>
-                                    <div class="select__body">
-                                        <div class="select__item">12:00</div>
-                                        <div class="select__item">13:00</div>
-                                        <div class="select__item">14:00</div>
-                                        <div class="select__item">15:00</div>
-                                        <div class="select__item">16:00</div>
+                                    <div class="select__body" id="timeOptionsList">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <button class="validateBtn" type="submit">register</button>
+                        <button class="validateBtn" type="submit" id="submit">register</button>
                     </div>
                 </form>
             </div>
@@ -112,15 +104,15 @@
                     <div class="data-container">
                         <div class="left">
                             <div class="name">Date</div>
-                            <span>01 March</span>
+                            <span id="resultingDate">01 March</span>
                         </div>
                         <div class="right">
                             <div class="name">Time</div>
                             <div class="time">
                                 <div class="arrow"></div>
                                 <div class="container">
-                                    <span>17:30</span>
-                                    <span>18:00</span>
+                                    <span id="resultingStartTime">17:30</span>
+                                    <span id="resultingEndTime">18:00</span>
                                 </div>
                             </div>
                         </div>
@@ -131,7 +123,9 @@
             </div>
         </div>
     </div>
-    <script src="select.js"></script>
-    <script src="validation.js"></script>
+    <script src="js/buttons.js"></script>
+    <script src="js/initValues.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/validation.js"></script>
 </body>
 </html>
