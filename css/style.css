@@ -181,7 +181,7 @@ p {
     line-height: 80px;
     text-transform: lowercase;
 }
-.hero .background .content .container .link:first-child {
+.hero .background .content .container .link:not(:last-child) {
     margin-right: 40px;
 }
 
@@ -681,7 +681,7 @@ p {
         flex-direction: column;
     }
 
-    .hero .background .content .container .link:first-child {
+    .hero .background .content .container .link:not(:last-child) {
         margin-right: 0;
         margin-bottom: 40px;
     }
