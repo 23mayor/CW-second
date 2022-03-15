@@ -171,6 +171,9 @@ p {
 }
 
 .hero .background .content .container .link {
+    display: flex;
+    align-items: center;
+
     padding: 8px 56px;
     border: 1px solid #FFFFFF;
     border-radius: 100px;
@@ -181,6 +184,7 @@ p {
     line-height: 80px;
     text-transform: lowercase;
 }
+
 .hero .background .content .container .link:not(:last-child) {
     margin-right: 40px;
 }
