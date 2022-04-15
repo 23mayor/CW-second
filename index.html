@@ -4,129 +4,241 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
+
+    <title>Collective Live</title>
 </head>
 <body>
     <section class="hero">
         <div class="background">
             <div class="header">
                 <div class="logo"></div>
+                <nav class="nav-menu">
+                    <li class="nav-menu__item dropdown"><a href="#">Projects</a></li>
+                    <li class="nav-menu__item"><a href="#">How it works</a></li>
+                    <li class="nav-menu__item"><a href="#">Who it's for</a></li>
+                    <li class="nav-menu__item"><a href="#">Pricing</a></li>
+                    <li class="nav-menu__item"><a href="#">Why us</a></li>
+                    <li class="nav-menu__item"><a href="#">Blog</a></li>
+                    <li class="nav-menu__item dropdown"><a href="#">More</a></li>
+                </nav>
                 <div class="info">
-                    <a href="#" class="signup-link" onclick="onSignButtonClick('SIGN_UP')">Sign Up</a>
-                    <a href="#" class="login-link" onclick="onSignButtonClick('SIGN_IN')">Login</a>
+                    <a href="#" class="signup-link">Sign Up</a>
+                    <a href="#" class="login-link">Login</a>
                 </div>
             </div>
             <div class="content">
                 <h2>CollectiveWEB.<br>New reality for your business</h2>
                 <div class="text">
                     <p class="first">
-                        The main website is under construction.
-                    </p>
-                    <p class="second">                    
-                        We are in the process of implementing important updates to make your virtual journey smoother.<br>
-                        Book a guided demo session through CollectiveWEB virtual space, or go back to our old website.
+                        Welcome to metaverse designed to connect, create, 
+                        collaborate and celebrate in entirely new way.
                     </p>
                 </div>
                 <div class="container">
                     <a href="#popup" class="link">book a demo</a>
-                    <a class="link" href="https://collectiveweb.live/" target="_blank">go back</a>
-                    <a href="https://www.collectiveweb.com/companies/WOW%20Summit/landing" class="link">wow summit exhibition</a>
                 </div>
-            </div>
-            <div class="video-block">
-                <video poster="/images/screen.png" autoplay muted loop preload="auto" class="background__video">
-                    <source src="video/CW x WOW Summit (video-converter.com).webm" type="video/webm">
-                    <source src="/video/CW x WOW Summit (video-converter.com).mp4" type="video/mp4">
-                </video>
             </div>
         </div>
     </section>
-    <div id="popup" class="popup">
-        <a href="#join" class="popup__area"></a>
-        <div class="popup__body">
-            <div class="popup__content">
-                <div class="popup__container">
-                    <h2>Registration</h2>
-                    <a href="#join" class="popup__close"></a>
-                </div>
-                <form action="" method="get" class="formWithValidation">
-                    <div class="popup__form">
-                        <label class="popup__text" for="name">Name</label>
-                        <input class="name field" type="text" placeholder="Your name" name="name">
-
-                        <label class="popup__text" for="email">Email</label>
-                        <input class="email field" type="email" placeholder="Your email" name="email" required>
-
-                        <div class="popup__timedata">
-                            <div class="popup__date">
-                                <span>Date</span>
-                                <div class="select date">
-                                    <div class="select__header">
-                                        <span class="select__current">Pick a date</span>
-                                        <div class="select__icon"></div>
-                                    </div>
-                                    <div class="select__body" id="dateOptionsList">
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="popup__select">
-                                <span>Time</span>
-                                <div class="select time">
-                                    <div class="select__header">
-                                        <span class="select__current">Select a time</span>
-                                        <div class="select__icon"></div>
-                                    </div>
-                                    <div class="select__body" id="timeOptionsList">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="validateBtn" type="submit" id="submit">register</button>
-                    </div>
-                </form>
+    <section class="case">
+        <div class="content">
+            <div class="big-image"></div>
+            <div class="container">
+                <h2>NFT</h2>
+                <h4>Art needs an audience!</h4>
+                <p>CollectiveWEB creates gallery spaces for unique NFT art exhibitions and fashion shows.</p>
+                <a href="#" class="link">view case</a>
             </div>
         </div>
-    </div>
-    <div id="success" class="success">
-        <a href="#join" class="success__area"></a>
-        <div class="success__body">
-            <div class="success__content">
-                <div class="success__container">
-                    <h2>
-                        Thank you,<br>
-                        your registration for the CollectiveWEB demo was successful!
-                    </h2>
-                    <a href="#hero" class="success__close"></a>
+    </section>
+    <section class="third-screen">
+        <div class="content">
+            <h2>Third screen</h2>
+            <div class="container">
+                <div class="card img-1">
+                    <div class="info">
+                        <h4>Title<br>50 symbols</h4>
+                        <p>
+                            The unusual format of the store attracts and
+                            captivates the customer by increasing the CTR by 30%
+                        </p>
+                    </div>
                 </div>
-                <div class="success__text">
-                    <h4 class="text-title">We are waiting for you for your demo</h4>
-                    <div class="data-container">
-                        <div class="left">
-                            <div class="name">Date</div>
-                            <span id="resultingDate">01 March</span>
-                        </div>
-                        <div class="right">
-                            <div class="name">Time</div>
-                            <div class="time">
-                                <div class="arrow"></div>
-                                <div class="container">
-                                    <span id="resultingStartTime">17:30</span>
-                                    <span id="resultingEndTime">18:00</span>
-                                </div>
+                <div class="card img-2">
+                    <div class="info">
+                        <h4>Title<br>50 symbols</h4>
+                        <p>
+                            Live communication and game mechanics increase 
+                            the customer's time in the store by 50%
+                        </p>
+                    </div>
+                </div>
+                <div class="card img-3">
+                    <div class="info">
+                        <h4>Title<br>50 symbols</h4>
+                        <p>
+                            The ability to study and compare products in detail, 
+                            seek help from a consultant increases the AOV to 50%
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="book-a-demo">
+        <div class="background-image">
+            <div class="content">
+                <div class="container">
+                    <h2>Book a Demo</h2>
+                    <p>
+                        Your journey into the metaverse starts here! 
+                        Please fill in the form and we'll arrange a full guided demo for you.
+                    </p>
+                    <a href="#popup">book a demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="trusted-by">
+        <div class="content"><h2>Trusted by</h2></div>
+        <div class="background"></div>
+    </section>
+    <section class="reviews">
+        <div class="content">
+            <h2>Reviews</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <p>
+                                «The whole collaboration was a win-win. 
+                                Our project resulted in doubling the amount of attendees,  
+                                we’ve received good feedback from a whole bunch of guests 
+                                about the one-of-a-kind experience they’ve had, and the emails 
+                                are still coming! Great job, what else to say.»
+                            </p>
+                            <div class="info">
+                                <div class="image wow"></div>
+                                <h5>WoW Summit metaverse</h5>
                             </div>
                         </div>
                     </div>
-                    <h4 class="text-description">Before the event begins, we will send your connection link to your email</h4>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <p>
+                                «We were impressed by the teams’ creativity, 
+                                dedication and attention to details. 
+                                Looking forward for the future projects.»
+                            </p>
+                            <div class="info">
+                                <div class="image paysenger"></div>
+                                <h5>Paysenger</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <p>
+                                «I’ve said it before and I'll say it again. 
+                                Forget everything you heard about the metaverse. 
+                                This is a real game-changer in the industry, 
+                                the most advanced platform you can possibly get!! 
+                                Thank you all for doing what you’re doing and for 
+                                what you’ve done for Inder.»
+                            </p>
+                            <div class="info">
+                                <div class="image pixelynx"></div>
+                                <h5>Pixelynx</h5>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <a href="#join" class="success__btn-close">close</a>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
-    </div>
-    <script src="js/buttons.js"></script>
-    <script src="js/initValues.js"></script>
-    <script src="js/select.js"></script>
-    <script src="js/validation.js"></script>
+    </section>
+    <footer class="footer">
+        <div class="content">
+            <div class="top">
+                <div class="logo"></div>
+                <h2>Contact us</h2>
+                <div class="info">
+                    <a href="mailto:info@collectiveweb.com">info@collectiveweb.com</a>
+                    <a href="tel:+1(646)2209966">+1 (646) 220 99 66</a>
+                    <span>3101 Park Blvd, Palo Alto, CA 94306</span>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    <h5>Follow us</h5>
+                    <div class="link-list">
+                        <a href="#" class="link instagram"></a>
+                        <a href="#" class="link facebook"></a>
+                        <a href="#" class="link linkedin"></a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="list">
+                        <div class="column">
+                            <a href="#" class="list-item">NFT</a>
+                            <a href="#" class="list-item">Retail</a>
+                            <a href="#" class="list-item">Enterprise</a>
+                        </div>
+                        <div class="column">
+                            <a href="#" class="list-item">How it works</a>
+                            <a href="#" class="list-item">Who it's for</a>
+                            <a href="#" class="list-item">Pricing</a>
+                        </div>
+                        <div class="column">
+                            <a href="#" class="list-item">Why us</a>
+                            <a href="#" class="list-item">Blog</a>
+                            <a href="#" class="list-item">More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <span>© CollectiveWEB</span>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of use</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        effect: 'cards',
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        });
+    </script>
 </body>
 </html>
