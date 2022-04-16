@@ -601,6 +601,288 @@ p {
     margin-right: 73px;
 }
 
+/* Popup */
+
+/* Register-form popup */
+
+.popup__area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.popup {
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(20, 14, 23, 0.5);
+
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 0.8s ease 0s;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+}
+
+.popup:target .popup__content {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.popup__body {
+    height: 100%;
+    margin-right: 20px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.popup__content {
+    width: 379px;
+
+    background-color: #FFFFFF;
+
+    padding: 24px;
+
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 32px;
+    border-radius: 8px;
+
+    color: #140E17;
+
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    transform: translate(0px, -100%);
+}
+
+.popup__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 60px;
+}
+
+.popup__container .link {
+    padding: 16px 36px;
+    border-radius: 8px;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #737373;
+}
+
+.popup__container .link:hover {
+    color: #140E17;
+}
+
+.popup__container .link.active {
+    color: #140E17;
+    background: #F3F3F3;
+}
+
+.popup__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup__form input {
+    padding: 16px 24px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #A2A2A2;
+    background-color: transparent;
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+    outline: none;
+}
+
+.popup__form .password-label {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #737373;
+
+    margin-left: 16px;
+    margin-bottom: 36px;
+}
+
+.popup__form input[type=text],
+.popup__form input[type=email] {
+    margin-bottom: 16px;
+}
+
+.popup__form .link {
+    margin-top: 16px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #A24DE8;
+}
+
+.continue-btn {
+    width: 100%;
+    padding: 24px 0;
+    margin-top: 36px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    background: #A24DE8;
+    border-radius: 8px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.popup__form span {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #A2A2A2;
+
+    margin-top: 28px;
+}
+
+.popup__form .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.popup__form .container a {
+    display: flex;
+    align-items: center;
+    padding: 16px 22px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #140E17;
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+}
+
+.popup__form .container .icon {
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/meta.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Checkbox Item */
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid #A2A2A2;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    cursor: pointer;
+
+    margin-right: 19px;
+}
+
+.custom-checkbox:checked+label::before {
+    border-color: #A24DE8;
+    background-color: transparent;
+    background-image: url("../images/checkbox-active.svg");
+}
+
+/* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #140E17;
+    background-image: url("../images/checkbox.svg");
+}
+
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active+label::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled+label::before {
+    background-color: #A2A2A2;
+}
+
+.custom-checkbox:disabled:checked+label::before {
+    border-color: #A2A2A2;
+    background-image: url("../images/checkbox.svg");
+}
+
+/* Indeterminate Checkbox*/
+
+.indeterminate+label::before {
+    border-color: #A2A2A2;
+    background-image: url("../../images/indeterminate.svg");
+}
+
+.popup__form .checkbox-label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.popup__form .validateBtn {
+    width: 100%;
+    padding: 24px 0;
+    margin-top: 36px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    background: #A24DE8;
+    border-radius: 8px;
+    color: #FFFFFF;
+    border: none;
+}
+
+/* _______________________________ */
+
 @media (max-width: 1920px) {
     .content {
         margin: 0 90px;
@@ -679,12 +961,6 @@ p {
         margin: 0 20px;
     }
 
-
-    .hero .background .content h2 {
-        font-size: 76px;
-        line-height: 96px;
-    }
-
     .case .content {
         flex-direction: column;
     }
@@ -706,10 +982,6 @@ p {
         padding: 383px 24px 24px 24px;
     }
 
-    .trusted-by .background {
-        height: 354px;
-    }
-
     .third-screen .content .container .card:not(:last-child) {
         margin-right: 0;
         margin-bottom: 20px;
@@ -723,13 +995,13 @@ p {
         margin-top: 250px;
     }
 
+    .trusted-by .background {
+        height: 354px;
+    }
+
     .swiper {
         width: 460px;
         height: 280px;
-    }
-
-    .swiper-slide .container {
-        padding: 25px;
     }
 
     .reviews .swiper-slide p {
@@ -741,7 +1013,7 @@ p {
 
     .reviews .swiper-slide .info .image {
         width: 70px;
-        height: 65px;
+        height: 70px;
         background-size: 35px;
     }
 
@@ -749,6 +1021,10 @@ p {
         font-weight: 600;
         font-size: 18px;
         line-height: 22px;
+    }
+
+    .swiper-slide .container {
+        padding: 25px;
     }
 
     .footer .content .bottom {
@@ -762,5 +1038,140 @@ p {
 
     .footer .content .bottom .right {
         width: 100%;
+    }
+
+    /* Popup */
+
+    .popup__body {
+        justify-content: center;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 530px) {
+
+    .hero .background .content h2 {
+        font-size: 56px;
+        line-height: 76px;
+    }
+
+    .hero .background .header .logo {
+        width: 168px;
+        height: 22px;
+    }
+
+    .hero .background .content .text {
+        width: 80%;
+    }
+
+    .hero .background .content .container .link {
+        width: 100%;
+        font-size: 46px;
+        line-height: 60px;
+    }
+
+    .case .content .container h2 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    .case .content .container h4 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .case .content .container a {
+        font-size: 46px;
+        line-height: 60px;
+    }
+
+    .third-screen .content h2 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+
+    .third-screen .content .container .card .info h4 {
+        font-size: 46px;
+        line-height: 46px;
+    }
+
+    .third-screen .content .container .card .info p {
+        font-size: 18px;
+        line-height: 22px;
+        width: 70%;
+    }
+
+
+    .book-a-demo .content .container h2 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    .book-a-demo .content .container p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .book-a-demo .content .container a {
+        font-size: 46px;
+        line-height: 60px;
+    }
+
+    .trusted-by .content h2 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    .reviews .content h2 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    .swiper {
+        width: 358px;
+        height: 318px;
+    }
+
+    .footer .content .top .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .footer .content .top h2 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    .footer .content .top .info a {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero .background .header {
+        flex-direction: column;
+    }
+
+    .hero .background .header .logo {
+        margin-bottom: 20px;
+    }
+
+    .reviews {
+        display: none;
+    }
+
+    .footer .content .bottom .right .list {
+        flex-direction: column;
+    }
+
+    .footer .content .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer .content .container span,
+    .footer .content .container a:not(:last-child) {
+        margin-bottom: 10px;
     }
 }
