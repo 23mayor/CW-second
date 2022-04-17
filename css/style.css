@@ -953,10 +953,6 @@ p {
         width: 45%;
     }
 
-    .third-screen .content .container .card {
-        padding: 152px 24px 24px 24px;
-    }
-
     .footer .content .bottom .left {
         width: 30%;
     }
@@ -994,7 +990,7 @@ p {
 
     .third-screen .content .container .card {
         width: 90%;
-        padding: 383px 24px 24px 24px;
+        height: 365px;
     }
 
     .third-screen .content .container .card:not(:last-child) {
@@ -1065,9 +1061,13 @@ p {
 
 @media (max-width: 530px) {
 
+    .hero .background .content {
+        margin-top: 80px;
+    }
+
     .hero .background .content h2 {
         font-size: 56px;
-        line-height: 76px;
+        line-height: 66px;
     }
 
     .hero .background .header .logo {
@@ -1081,13 +1081,18 @@ p {
 
     .hero .background .content .container .link {
         width: 100%;
-        font-size: 46px;
-        line-height: 60px;
+        font-size: 36px;
+        line-height: 50px;
     }
 
     .case .content .container h2 {
-        font-size: 70px;
-        line-height: 70px;
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .case .content .big-image {
+        height: 360px;
+        margin-bottom: 60px;
     }
 
     .case .content .container h4 {
@@ -1096,15 +1101,22 @@ p {
     }
 
     .case .content .container a {
-        font-size: 46px;
-        line-height: 60px;
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    .third-screen {
+        margin-top: 160px;
     }
 
     .third-screen .content h2 {
-        font-size: 70px;
-        line-height: 70px;
+        font-size: 60px;
+        line-height: 60px;
     }
 
+    .third-screen .content .container .card {
+        height: 414px;
+    }
 
     .third-screen .content .container .card .info h4 {
         font-size: 46px;
@@ -1117,10 +1129,13 @@ p {
         width: 70%;
     }
 
+    .book-a-demo {
+        margin-top: 160px;
+    }
 
     .book-a-demo .content .container h2 {
-        font-size: 70px;
-        line-height: 70px;
+        font-size: 60px;
+        line-height: 60px;
     }
 
     .book-a-demo .content .container p {
@@ -1129,23 +1144,45 @@ p {
     }
 
     .book-a-demo .content .container a {
-        font-size: 46px;
-        line-height: 60px;
+        font-size: 36px;
+        line-height: 50px;
     }
 
     .trusted-by .content h2 {
-        font-size: 70px;
-        line-height: 70px;
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .trusted-by .background {
+        height: 197px;
+    }
+
+    .reviews {
+        margin-top: 160px;
     }
 
     .reviews .content h2 {
-        font-size: 70px;
-        line-height: 70px;
+        font-size: 60px;
+        line-height: 60px;
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        display: none;
     }
 
     .swiper {
         width: 358px;
         height: 318px;
+    }
+
+    .footer {
+        margin-top: 160px;
+    }
+
+    .footer .content .top {
+        padding-bottom: 90px;
     }
 
     .footer .content .top .logo {
@@ -1154,12 +1191,31 @@ p {
     }
 
     .footer .content .top h2 {
-        font-size: 70px;
-        line-height: 70px;
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .footer .content .top .info {
+        font-size: 20px;
+        line-height: 22px;
     }
 
     .footer .content .top .info a {
         margin-bottom: 20px;
+    }
+
+    .footer .content .bottom {
+        padding-top: 40px;
+    }
+
+    .footer .content .bottom .left {
+        margin-bottom: 0;
+    }
+
+    .footer .content .container {
+        align-items: flex-start;
+        flex-direction: column;
+        margin-top: 90px;
     }
 }
 
