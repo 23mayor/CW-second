@@ -54,15 +54,13 @@ p {
 
 .hero .background {
     position: relative;
-
-    background-image: url("../images/hero-background.png");
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/hero-background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .hero .background .header {
-
     max-width: 1740px;
     margin: 0 auto;
     padding-top: 40px;
@@ -84,7 +82,7 @@ p {
 }
 
 .hero .background .header .nav-menu {
-    display: flex;
+    display: none;
     align-items: center;
 
     font-weight: 700;
@@ -174,6 +172,7 @@ p {
 .hero .background .content .container .link {
     padding: 8px 56px;
     border: 1px solid #FFFFFF;
+    background-color: #A24DE8;
     border-radius: 100px;
 
     text-align: center;
@@ -181,6 +180,11 @@ p {
     font-size: 56px;
     line-height: 80px;
     text-transform: lowercase;
+    transition: all 0.3s ease;
+}
+
+.hero .background .content .container .link:hover {
+    background-color: #673491;
 }
 
 /* Case */
@@ -196,7 +200,7 @@ p {
 }
 
 .case .content .big-image {
-    width: 60%;
+    width: 55%;
     height: 803px;
     background-image: url("../images/img-group.png");
     background-size: contain;
@@ -205,7 +209,7 @@ p {
 }
 
 .case .content .container {
-    width: 35%;
+    width: 40%;
 }
 
 .case .content .container h2 {
@@ -267,6 +271,7 @@ p {
 
 .third-screen .content .container .card {
     width: 28%;
+    height: 720px;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -275,7 +280,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 20px;
-    padding: 472px 24px 24px 24px;
+    padding: 0 24px 24px 24px;
 }
 
 .third-screen .content .container .card:not(:last-child) {
@@ -297,6 +302,10 @@ p {
 /* .third-screen .content .container .card .info {
     padding: 0 24px 24px 24px;
 } */
+
+.third-screen .content .container .card .info {
+    height: 30%;
+}
 
 .third-screen .content .container .card .info h4 {
     font-weight: 400;
@@ -325,7 +334,7 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 920px;
+    height: 1104px;
 }
 
 .book-a-demo .content {
@@ -384,7 +393,7 @@ p {
 
 .trusted-by .background {
     width: 100%;
-    height: 867px;
+    height: 995px;
     background-image: url("../images/trusted-by.svg");
     background-size: contain;
     background-position: center;
@@ -565,6 +574,7 @@ p {
 }
 
 .footer .content .bottom .right {
+    display: none;
     width: 50%;
 }
 
@@ -633,6 +643,11 @@ p {
     overflow-x: hidden;
 }
 
+.popup.active {
+    opacity: 1;
+    visibility: visible;
+}
+
 .popup:target {
     opacity: 1;
     visibility: visible;
@@ -682,7 +697,7 @@ p {
     margin-bottom: 60px;
 }
 
-.popup__container .link {
+.popup__container .tab-link {
     padding: 16px 36px;
     border-radius: 8px;
 
@@ -692,11 +707,11 @@ p {
     color: #737373;
 }
 
-.popup__container .link:hover {
+.popup__container .tab-link:hover {
     color: #140E17;
 }
 
-.popup__container .link.active {
+.popup__container .tab-link.active {
     color: #140E17;
     background: #F3F3F3;
 }
@@ -902,8 +917,8 @@ p {
         width: 50%;
     }
 
-    .third-screen .content .container .card {
-        padding: 252px 24px 24px 24px;
+    .third-screen .content .container .card .info {
+        height: 50%;
     }
 }
 
