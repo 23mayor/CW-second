@@ -240,6 +240,7 @@ p {
 .case .content .container a {    
     padding: 8px 56px;
     border: 1px solid #FFFFFF;
+    background-color: #A24DE8;
     border-radius: 100px;
 
     text-align: center;
@@ -247,6 +248,11 @@ p {
     font-size: 56px;
     line-height: 80px;
     text-transform: lowercase;
+    transition: all 0.3s ease;
+}
+
+.case .content .container a:hover {
+    background-color: #673491;
 }
 
 /* Third Screen */
@@ -367,8 +373,9 @@ p {
 }
 
 .book-a-demo .content .container a {    
-    padding: 8px 24px;
+    padding: 8px 56px;
     border: 1px solid #FFFFFF;
+    background-color: #A24DE8;
     border-radius: 100px;
 
     text-align: center;
@@ -376,6 +383,11 @@ p {
     font-size: 56px;
     line-height: 80px;
     text-transform: lowercase;
+    transition: all 0.3s ease;
+}
+
+.book-a-demo .content .container a:hover {
+    background-color: #673491;
 }
 
 /* Trusted By */
@@ -606,7 +618,7 @@ p {
     color: #666666;
 }
 
-.footer .content .container a:nth-child(1) {
+.footer .content .container .link {
     margin-left: auto;
     margin-right: 73px;
 }
@@ -1216,6 +1228,10 @@ p {
         align-items: flex-start;
         flex-direction: column;
         margin-top: 90px;
+    }
+
+    .footer .content .container .link {
+        margin: 0;
     }
 }
 
