@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+/* @font-face {
+    font-family: "Neue Machina", serif, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/PPNeueMachina-Medium.woff"), url("../fonts/PPNeueMachina-Medium.woff2"), 
+    url("../fonts/PPNeueMachina-Medium.eot"), url("../fonts/PPNeueMachina-Medium.otf"),
+    url("../fonts/PPNeueMachina-Medium.ttf");
+} */
+
+@font-face {
+    font-family: "Neue Machina";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/PPNeueMachina-Medium.woff2") format("woff2"),
+           url("../fonts/PPNeueMachina-Medium.woff") format("woff");
+   }
 
 html,
 body {
@@ -133,18 +149,16 @@ p {
 .hero .background .content {
     position: relative;
     z-index: 3;
-
+    width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 171px;
+    margin-top: 100px;
     padding-bottom: 135px;
 }
 
 .hero .background .content h2 {
-    width: 44%;
-
-    font-family: 'Fjalla One', sans-serif;
+    font-family: "Neue Machina", serif, sans-serif;
     font-weight: 400;
     font-size: 100px;
     line-height: 100px;
@@ -153,20 +167,16 @@ p {
 }
 
 .hero .background .content .text {
-    width: 44%;
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
-    margin-bottom: 80px;
-}
-
-.hero .background .content .text .first {
-    margin-bottom: 35px;
 }
 
 .hero .background .content .container {
     width: 100%;
     display: flex;
+
+    margin-top: 40px;
 }
 
 .hero .background .content .container .link {
@@ -213,7 +223,7 @@ p {
 }
 
 .case .content .container h2 {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Neue Machina', sans-serif;
     font-weight: 400;
     font-size: 80px;
     line-height: 80px;
@@ -222,6 +232,7 @@ p {
 }
 
 .case .content .container h4 {
+    font-family: "Neue Machina", sans-serif;
     font-weight: 400;
     font-size: 40px;
     line-height: 40px;
@@ -268,6 +279,7 @@ p {
 }
 
 .third-screen .content h2 {
+    font-family: "Neue Machina", sans-serif;
     font-weight: 400;
     font-size: 80px;
     line-height: 80px;
@@ -314,6 +326,7 @@ p {
 }
 
 .third-screen .content .container .card .info h4 {
+    font-family: "Neue Machina", sans-serif;
     font-weight: 400;
     font-size: 56px;
     line-height: 56px;
@@ -356,6 +369,7 @@ p {
 }
 
 .book-a-demo .content .container h2 {
+    font-family: "Neue Machina", sans-serif;
     font-weight: 400;
     font-size: 80px;
     line-height: 80px;
@@ -396,6 +410,7 @@ p {
 }
 
 .trusted-by .content h2 {
+    font-family: "Neue Machina", sans-serif;
     font-weight: 400;
     font-size: 80px;
     line-height: 80px;
@@ -424,6 +439,7 @@ p {
 }
 
 .reviews .content h2 {
+    font-family: "Neue Machina", sans-serif;
     font-weight: 400;
     font-size: 80px;
     line-height: 80px;
@@ -522,6 +538,7 @@ p {
 }
 
 .footer .content .top h2 {
+    font-family: "Neue Machina", sans-serif;
     font-weight: 400;
     font-size: 80px;
     line-height: 80px;
@@ -922,7 +939,7 @@ p {
 
 @media (max-width: 1500px) {
     .hero .background .content h2 {
-        width: 59%;
+        width: 70%;
     }
 
     .hero .background .content .text {
