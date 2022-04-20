@@ -149,6 +149,26 @@ p {
     border-radius: 8px;
 }
 
+.hero .background .header .info .signup-link:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.hero .background .header .info .signup-link:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.hero .background .header .info .login-link:hover {
+    color: #140E17;
+    text-decoration: none;
+}
+
+.hero .background .header .info .login-link:visited {
+    color: #140E17;
+    text-decoration: none;
+}
+
 .hero .background .content {
     position: relative;
     z-index: 3;
@@ -176,14 +196,14 @@ p {
     line-height: 32px;
 }
 
-.hero .background .content .container {
+.hero .background .content .hero-container {
     width: 100%;
     display: flex;
 
     margin-top: 40px;
 }
 
-.hero .background .content .container .link {
+.hero .background .content .hero-container .link {
     padding: 8px 56px;
     border: 1px solid #FFFFFF;
     background-color: #A24DE8;
@@ -197,8 +217,15 @@ p {
     transition: all 0.3s ease;
 }
 
-.hero .background .content .container .link:hover {
+.hero .background .content .hero-container .link:hover {
     background-color: #673491;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.hero .background .content .hero-container .link:visited {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 /* Case */
@@ -221,11 +248,11 @@ p {
     background-repeat: no-repeat;
 }
 
-.case .content .container {
+.case .content .case-container {
     width: 48%;
 }
 
-.case .content .container h2 {
+.case .content .case-container h2 {
     font-family: 'Neue Machina', sans-serif;
     font-weight: 400;
     font-size: 80px;
@@ -234,7 +261,7 @@ p {
     margin-bottom: 32px;
 }
 
-.case .content .container h4 {
+.case .content .case-container h4 {
     font-family: "Neue Machina", sans-serif;
     font-weight: 400;
     font-size: 40px;
@@ -243,7 +270,7 @@ p {
     margin-bottom: 16px;
 }
 
-.case .content .container p {
+.case .content .case-container p {
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
@@ -251,7 +278,7 @@ p {
     margin-bottom: 80px;
 }
 
-.case .content .container a {    
+.case .content .case-container a {    
     padding: 8px 56px;
     border: 1px solid #FFFFFF;
     background-color: #A24DE8;
@@ -265,8 +292,15 @@ p {
     transition: all 0.3s ease;
 }
 
-.case .content .container a:hover {
+.case .content .case-container a:hover {
     background-color: #673491;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.case .content .case-container a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 /* Third Screen */
@@ -275,7 +309,7 @@ p {
     margin-top: 320px;
 }
 
-.third-screen .content .container {
+.third-screen .content .cards-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -290,19 +324,19 @@ p {
     margin-bottom: 80px;
 }
 
-.third-screen .content .container .card {
-    width: 28%;
-    height: 229px;
+.third-screen .content .cards-container .card {
+    width: 32%;
+    height: 731px;
     display: flex;
     flex-direction: column;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 20px;
-    padding: 428px 24px 24px 24px;
+    padding: 475px 24px 24px 24px;
 }
 
-.third-screen .content .container .card:not(:last-child) {
+.third-screen .content .cards-container .card:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -318,7 +352,7 @@ p {
     background-image: url("../images/webp/img-3.webp");
 }
 
-.third-screen .content .container .card .info h4 {
+.third-screen .content .cards-container .card .info h4 {
     font-family: "Neue Machina", sans-serif;
     font-weight: 400;
     font-size: 56px;
@@ -327,7 +361,7 @@ p {
     margin-bottom: 16px;
 }
 
-.third-screen .content .container .card .info p {
+.third-screen .content .cards-container .card .info p {
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
@@ -355,7 +389,7 @@ p {
     margin-top: 190px;
 }
 
-.book-a-demo .content .container {
+.book-a-demo .content .book-a-demo-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -363,7 +397,7 @@ p {
     text-align: center;
 }
 
-.book-a-demo .content .container h2 {
+.book-a-demo .content .book-a-demo-container h2 {
     font-family: "Neue Machina", sans-serif;
     font-weight: 400;
     font-size: 80px;
@@ -372,7 +406,7 @@ p {
     margin-bottom: 40px;
 }
 
-.book-a-demo .content .container p {
+.book-a-demo .content .book-a-demo-container p {
     width: 50%;
     font-weight: 500;
     font-size: 24px;
@@ -381,7 +415,7 @@ p {
     margin-bottom: 80px;
 }
 
-.book-a-demo .content .container a {    
+.book-a-demo .content .book-a-demo-container a {    
     padding: 8px 56px;
     border: 1px solid #FFFFFF;
     background-color: #A24DE8;
@@ -395,8 +429,15 @@ p {
     transition: all 0.3s ease;
 }
 
-.book-a-demo .content .container a:hover {
+.book-a-demo .content .book-a-demo-container a:hover {
     background-color: #673491;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.book-a-demo .content .book-a-demo-container a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 /* Trusted By */
@@ -622,7 +663,7 @@ p {
     margin-bottom: 40px;
 }
 
-.footer .content .container {
+.footer .content .footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -635,7 +676,7 @@ p {
     color: #666666;
 }
 
-.footer .content .container .link {
+.footer .content .footer-container .link {
     margin-left: auto;
     margin-right: 73px;
 }
@@ -810,14 +851,14 @@ p {
     margin-top: 28px;
 }
 
-.popup__form .container {
+.popup__form .pop-up-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 16px;
 }
 
-.popup__form .container a {
+.popup__form .pop-up-container a {
     display: flex;
     align-items: center;
     padding: 16px 22px;
@@ -830,7 +871,7 @@ p {
     border-radius: 8px;
 }
 
-.popup__form .container .icon {
+.popup__form .pop-up-container .icon {
     width: 40px;
     height: 40px;
     background-image: url("../images/meta.svg");
@@ -962,24 +1003,24 @@ p {
         height: 590px;
     }
 
-    .third-screen .content .container .card {
+    .third-screen .content .cards-container .card {
         width: 28%;
-        height: 164px;
+        height: 472px;
         display: flex;
         flex-direction: column;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 20px;
-        padding: 322px 24px 24px 24px;
+        padding: 281px 24px 24px 24px;
     }
 
-    .third-screen .content .container .card .info h4 {
+    .third-screen .content .cards-container .card .info h4 {
         font-size: 37px;
         line-height: 37px;
     }
 
-    .third-screen .content .container .card .info p {
+    .third-screen .content .cards-container .card .info p {
         font-size: 16px;
         line-height: 1.33;
     }
@@ -1025,27 +1066,32 @@ p {
         height: 300px;
     }
     
-    .case .content .container {
+    .case .content .case-container {
         width: 53%;
     }
 
-    .case .content .container h2 {
+    .case .content .case-container h2 {
         font-size: 48px;
         line-height: 48px;
     }
 
-    .third-screen .content .container .card:not(:last-child) {
+    .third-screen .content .cards-container .card:not(:last-child) {
         margin-right: 10px;
     }
 
-    .third-screen .content .container .card {
-        width: 30%;
-        height: 164px;
-        padding: 322px 14px 24px 14px;
+    .third-screen .content .cards-container .card {
+        width: 33%;
+        height: 404px;
+        padding: 195px 14px 24px 14px;
     }
 
     .trusted-by .background {
         height: 463px;
+    }
+
+    .swiper {
+        width: 675px;
+        height: 416px;
     }
 
     .footer .content .bottom .left {
@@ -1081,20 +1127,20 @@ p {
         width: 100%;
     }
 
-    .case .content .container {
+    .case .content .case-container {
         width: 100%;
     }
 
-    .third-screen .content .container {
+    .third-screen .content .cards-container {
         flex-direction: column;
     }
 
-    .third-screen .content .container .card {
+    .third-screen .content .cards-container .card {
         width: 60%;
         height: 493px;
     }
 
-    .third-screen .content .container .card:not(:last-child) {
+    .third-screen .content .cards-container .card:not(:last-child) {
         margin-right: 0;
         margin-bottom: 20px;
     }
@@ -1182,13 +1228,13 @@ p {
         line-height: 22px;
     }
 
-    .hero .background .content .container .link {
+    .hero .background .content .hero-container .link {
         width: 100%;
         font-size: 30px;
         line-height: 50px;
     }
 
-    .case .content .container h2 {
+    .case .content .case-container h2 {
         font-size: 46px;
         line-height: 46px;
     }
@@ -1198,19 +1244,19 @@ p {
         margin-bottom: 60px;
     }
 
-    .case .content .container h4 {
+    .case .content .hero-container h4 {
         font-size: 25px;
         line-height: 25px;
     }
 
-    .case .content .container p {
+    .case .content .case-container p {
         font-weight: 500;
         font-size: 19px;
         line-height: 23px;
         margin-bottom: 80px;
     }
 
-    .case .content .container a {
+    .case .content .case-container a {
         font-size: 30px;
         line-height: 50px;
     }
@@ -1224,18 +1270,18 @@ p {
         line-height: 46px;
     }
 
-    .third-screen .content .container .card {
+    .third-screen .content .cards-container .card {
         width: 100%;
         height: 414px;
         padding: 229px 14px 24px 14px;
     }
 
-    .third-screen .content .container .card .info h4 {
+    .third-screen .content .cards-container .card .info h4 {
         font-size: 28px;
         line-height: 28px;
     }
 
-    .third-screen .content .container .card .info p {
+    .third-screen .content .cards-container .card .info p {
         font-size: 18px;
         line-height: 22px;
     }
@@ -1248,18 +1294,18 @@ p {
         height: 187px;
     }
 
-    .book-a-demo .content .container h2 {
+    .book-a-demo .content .book-a-demo-container h2 {
         font-size: 46px;
         line-height: 46px;
     }
 
-    .book-a-demo .content .container p {
+    .book-a-demo .content .book-a-demo-container p {
         font-size: 18px;
         line-height: 22px;
         width: 100%;
     }
 
-    .book-a-demo .content .container a {
+    .book-a-demo .content .book-a-demo-container a {
         width: 100%;
         font-size: 30px;
         line-height: 50px;
@@ -1338,22 +1384,22 @@ p {
         margin-bottom: 0;
     }
 
-    .footer .content .container {
+    .footer .content .footer-container {
         align-items: flex-start;
         flex-direction: column;
         margin-top: 90px;
     }
 
-    .footer .content .container .link {
+    .footer .content .footer-container .link {
         margin: 0;
     }
 }
 
 @media (max-width: 400px) {
     .hero .background .content h2,
-    .case .content .container h2,
+    .case .content .case-container h2,
     .third-screen .content h2,
-    .book-a-demo .content .container h2,
+    .book-a-demo .content .book-a-demo-container h2,
     .trusted-by .content h2,
     .footer .content .top h2 {
         font-size: 36px;
@@ -1381,13 +1427,13 @@ p {
         flex-direction: column;
     }
 
-    .footer .content .container {
+    .footer .content .footer-container {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .footer .content .container span,
-    .footer .content .container a:not(:last-child) {
+    .footer .content .footer-container span,
+    .footer .content .footer-container a:not(:last-child) {
         margin-bottom: 10px;
     }
 }

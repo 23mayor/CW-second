@@ -198,19 +198,9 @@ th {
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
   }
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
+
   abbr[title]:after {
     content: " (" attr(title) ")";
-  }
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
   }
   pre,
   blockquote {
@@ -1581,26 +1571,14 @@ pre code {
   max-height: 340px;
   overflow-y: scroll;
 }
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
 @media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
+
 }
 @media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
+
 }
 @media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
+
 }
 .container-fluid {
   padding-right: 15px;
