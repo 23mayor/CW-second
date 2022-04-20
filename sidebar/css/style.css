@@ -355,6 +355,10 @@ label {
 }
 
 @media (max-width: 530px) {
+    .sidebar {
+        overflow-y: scroll;
+    }
+
     .sidebar__content {
         width: 95%;
     }
