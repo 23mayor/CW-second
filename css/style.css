@@ -451,7 +451,7 @@ p {
     border-radius: 20px;
 }
 
-.swiper-slide .container {
+.swiper-slide .review-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -466,7 +466,7 @@ p {
 }
 
 .reviews .swiper-slide .info .image {
-    width: 100px;
+    min-width: 100px;
     height: 100px;
     background-color: #140E17;
     background-position: center;
@@ -1067,6 +1067,12 @@ p {
         margin: 0 20px;
     }
 
+    .hero .background .content h2 {
+        width: 90%;
+        font-size: 70px;
+        line-height: 70px;
+    }
+
     .case .content {
         flex-direction: column;
     }
@@ -1084,8 +1090,8 @@ p {
     }
 
     .third-screen .content .container .card {
-        width: 90%;
-        height: 365px;
+        width: 60%;
+        height: 493px;
     }
 
     .third-screen .content .container .card:not(:last-child) {
@@ -1118,7 +1124,7 @@ p {
     }
 
     .reviews .swiper-slide .info .image {
-        width: 70px;
+        min-width: 70px;
         height: 70px;
         background-size: 35px;
     }
@@ -1129,7 +1135,7 @@ p {
         line-height: 22px;
     }
 
-    .swiper-slide .container {
+    .swiper-slide .review-card {
         padding: 25px;
     }
 
@@ -1237,6 +1243,10 @@ p {
         margin-top: 160px;
     }
 
+    .book-a-demo .background-image {
+        height: 187px;
+    }
+
     .book-a-demo .content .container h2 {
         font-size: 46px;
         line-height: 46px;
@@ -1279,8 +1289,17 @@ p {
     }
 
     .swiper {
-        width: 358px;
-        height: 318px;
+        width: 258px;
+        height: 368px;
+    }
+
+    .reviews .swiper-slide p {
+        margin-bottom: 20px;
+    }
+
+    .reviews .swiper-slide h5 {
+        font-size: 16px;
+        line-height: 16px;
     }
 
     .footer {
@@ -1330,12 +1349,27 @@ p {
 }
 
 @media (max-width: 400px) {
+    .hero .background .content h2,
+    .case .content .container h2,
+    .third-screen .content h2,
+    .book-a-demo .content .container h2,
+    .trusted-by .content h2,
+    .footer .content .top h2 {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+
     .hero .background .header {
         flex-direction: column;
     }
 
     .hero .background .header .logo {
         margin-bottom: 20px;
+    }
+
+    .book-a-demo .background-image {
+        height: 176px;
     }
 
     .reviews {
