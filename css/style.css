@@ -1225,6 +1225,7 @@ p {
     }
 
     .third-screen .content .container .card {
+        width: 100%;
         height: 414px;
         padding: 229px 14px 24px 14px;
     }
