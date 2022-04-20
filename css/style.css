@@ -17,11 +17,14 @@
            url("../fonts/PPNeueMachina-Medium.woff") format("woff");
    }
 
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
     margin: 0 auto;
     padding: 0;
-    box-sizing: border-box;
     font-family: "Manrope", sans-serif;
     background-color: #140E17;
     color: #FFFFFF;
@@ -453,6 +456,8 @@ p {
     flex-direction: column;
     justify-content: space-between;
     padding: 40px;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .reviews .swiper-slide .info {
@@ -932,11 +937,11 @@ p {
     }
 
     .hero .background .content h2 {
-        width: 60%;
+        width: 58%;
     }
     
     .hero .background .content .text {
-        width: 60%;
+        width: 58%;
     }
 }
 
@@ -1156,8 +1161,8 @@ p {
     }
 
     .hero .background .content h2 {
-        font-size: 56px;
-        line-height: 66px;
+        font-size: 46px;
+        line-height: 46px;
     }
 
     .hero .background .header .logo {
@@ -1167,17 +1172,19 @@ p {
 
     .hero .background .content .text {
         width: 80%;
+        font-size: 18px;
+        line-height: 22px;
     }
 
     .hero .background .content .container .link {
         width: 100%;
-        font-size: 36px;
+        font-size: 30px;
         line-height: 50px;
     }
 
     .case .content .container h2 {
-        font-size: 60px;
-        line-height: 60px;
+        font-size: 46px;
+        line-height: 46px;
     }
 
     .case .content .big-image {
@@ -1186,12 +1193,19 @@ p {
     }
 
     .case .content .container h4 {
-        font-size: 30px;
-        line-height: 30px;
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .case .content .container p {
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 23px;
+        margin-bottom: 80px;
     }
 
     .case .content .container a {
-        font-size: 36px;
+        font-size: 30px;
         line-height: 50px;
     }
 
@@ -1200,23 +1214,23 @@ p {
     }
 
     .third-screen .content h2 {
-        font-size: 60px;
-        line-height: 60px;
+        font-size: 46px;
+        line-height: 46px;
     }
 
     .third-screen .content .container .card {
         height: 414px;
+        padding: 229px 14px 24px 14px;
     }
 
     .third-screen .content .container .card .info h4 {
-        font-size: 46px;
-        line-height: 46px;
+        font-size: 28px;
+        line-height: 28px;
     }
 
     .third-screen .content .container .card .info p {
         font-size: 18px;
         line-height: 22px;
-        width: 70%;
     }
 
     .book-a-demo {
@@ -1224,23 +1238,25 @@ p {
     }
 
     .book-a-demo .content .container h2 {
-        font-size: 60px;
-        line-height: 60px;
+        font-size: 46px;
+        line-height: 46px;
     }
 
     .book-a-demo .content .container p {
         font-size: 18px;
         line-height: 22px;
+        width: 100%;
     }
 
     .book-a-demo .content .container a {
-        font-size: 36px;
+        width: 100%;
+        font-size: 30px;
         line-height: 50px;
     }
 
     .trusted-by .content h2 {
-        font-size: 60px;
-        line-height: 60px;
+        font-size: 46px;
+        line-height: 46px;
     }
 
     .trusted-by .background {
@@ -1252,8 +1268,8 @@ p {
     }
 
     .reviews .content h2 {
-        font-size: 60px;
-        line-height: 60px;
+        font-size: 46px;
+        line-height: 46px;
         margin-left: 0;
         margin-right: auto;
     }
@@ -1281,8 +1297,8 @@ p {
     }
 
     .footer .content .top h2 {
-        font-size: 60px;
-        line-height: 60px;
+        font-size: 46px;
+        line-height: 46px;
     }
 
     .footer .content .top .info {
