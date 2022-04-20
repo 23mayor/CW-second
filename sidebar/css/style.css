@@ -363,4 +363,38 @@ label {
         width: 95%;
         height: 100%;
     }
+
+    .sidebar__content h2 {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 18px;
+    }
+
+    .sidebar__form {
+        padding-bottom: 20px;
+    }
+
+    .sidebar__content h4 {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+
+    .sidebar__add-team {
+        margin-top: 10px;
+    }
+
+    .sidebar__add-team .flex-container h4 {
+        font-size: 20px;
+    }
+
+    .sidebar__add-team .flex-container .counter {
+        font-size: 15px;
+    }
+
+    .sidebar__add-team .description {
+        font-size: 15px;
+    }
 }
