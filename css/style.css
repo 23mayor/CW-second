@@ -152,12 +152,12 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 200px;
     padding-bottom: 135px;
 }
 
 .hero .background .content h2 {
-    width: 60%;
+    width: 55%;
     font-family: "Neue Machina", serif, sans-serif;
     font-weight: 400;
     font-size: 100px;
@@ -167,7 +167,7 @@ p {
 }
 
 .hero .background .content .text {
-    width: 60%;
+    width: 55%;
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
@@ -207,11 +207,10 @@ p {
 .case .content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .case .content .big-image {
-    width: 55%;
+    width: 50%;
     height: 803px;
     background-image: url("../images/img-group.png");
     background-size: contain;
@@ -220,7 +219,7 @@ p {
 }
 
 .case .content .container {
-    width: 40%;
+    width: 48%;
 }
 
 .case .content .container h2 {
@@ -290,16 +289,14 @@ p {
 
 .third-screen .content .container .card {
     width: 28%;
-    height: 720px;
+    height: 229px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
-
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 20px;
-    padding: 0 24px 24px 24px;
+    padding: 428px 24px 24px 24px;
 }
 
 .third-screen .content .container .card:not(:last-child) {
@@ -316,14 +313,6 @@ p {
 
 .img-3 {
     background-image: url("../images/img-3.png");
-}
-
-/* .third-screen .content .container .card .info {
-    padding: 0 24px 24px 24px;
-} */
-
-.third-screen .content .container .card .info {
-    height: 30%;
 }
 
 .third-screen .content .container .card .info h4 {
@@ -349,16 +338,18 @@ p {
 
 .book-a-demo .background-image {
     display: flex;
+    justify-content: center;
     align-items: center;
     background-image: url("../images/background-book-a-demo.svg");
-    background-position: center;
+    background-position: center 0;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1104px;
+    height: 590px;
+    height: 797px;
 }
 
 .book-a-demo .content {
-    margin-top: 76px;
+    margin-top: 190px;
 }
 
 .book-a-demo .content .container {
@@ -421,7 +412,7 @@ p {
 
 .trusted-by .background {
     width: 100%;
-    height: 995px;
+    height: 867px;
     background-image: url("../images/trusted-by.svg");
     background-size: contain;
     background-position: center;
@@ -936,9 +927,21 @@ p {
     .hero .background .header {
         margin: 0 90px;
     }
+
+    .hero .background .content h2 {
+        width: 60%;
+    }
+    
+    .hero .background .content .text {
+        width: 60%;
+    }
 }
 
 @media (max-width: 1500px) {
+    .hero .background .content {
+        margin-top: 110px;
+    }
+
     .hero .background .content h2 {
         width: 70%;
     }
@@ -947,8 +950,34 @@ p {
         width: 50%;
     }
 
-    .third-screen .content .container .card .info {
-        height: 50%;
+    .book-a-demo .background-image {
+        height: 590px;
+    }
+
+    .third-screen .content .container .card {
+        width: 28%;
+        height: 164px;
+        display: flex;
+        flex-direction: column;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+        padding: 322px 24px 24px 24px;
+    }
+
+    .third-screen .content .container .card .info h4 {
+        font-size: 37px;
+        line-height: 37px;
+    }
+
+    .third-screen .content .container .card .info p {
+        font-size: 16px;
+        line-height: 1.33;
+    }
+
+    .trusted-by .background {
+        height: 650px;
     }
 }
 
