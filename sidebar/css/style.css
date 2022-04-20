@@ -361,5 +361,6 @@ label {
 
     .sidebar__content {
         width: 95%;
+        height: 100%;
     }
 }
