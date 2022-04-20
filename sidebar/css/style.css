@@ -58,12 +58,31 @@
     background-color: #FFFFFF;
 }
 
+.sidebar__container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .sidebar__content h2 {
     font-weight: 500;
     font-size: 40px;
     line-height: 48px;
 
     margin-bottom: 24px;
+}
+
+.sidebar__content .close-btn {
+    display: block;
+
+    width: 42px;
+    height: 42px;
+    margin-top: 0;
+    margin-bottom: auto;
+
+    background-image: url("../../images/close-popup.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .sidebar__content h4 {
@@ -363,6 +382,11 @@ label {
         width: 95%;
         height: 100%;
         padding: 12px 12px;
+    }
+
+    .sidebar__content .close-btn {
+        width: 27px;
+        height: 27px;
     }
 
     .sidebar__content h2 {
