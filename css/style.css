@@ -449,6 +449,9 @@ p {
 }
 
 .swiper-slide .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 40px;
 }
 
@@ -1000,16 +1003,44 @@ p {
 
 @media (max-width: 1024px) {
 
+    .hero .background .header {
+        margin: 0 20px;
+    }
+
+    .content {
+        margin: 0 20px;
+    }
+
     .case {
         margin-top: 100px;
     }
 
     .case .content .big-image {
         width: 45%;
+        height: 300px;
     }
     
     .case .content .container {
-        width: 45%;
+        width: 53%;
+    }
+
+    .case .content .container h2 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .third-screen .content .container .card:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    .third-screen .content .container .card {
+        width: 30%;
+        height: 164px;
+        padding: 322px 14px 24px 14px;
+    }
+
+    .trusted-by .background {
+        height: 463px;
     }
 
     .footer .content .bottom .left {
