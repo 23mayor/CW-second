@@ -73,7 +73,7 @@ p {
 
 .hero .background {
     position: relative;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/hero-background.png");
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/webp/hero-background.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -215,7 +215,7 @@ p {
 .case .content .big-image {
     width: 50%;
     height: 803px;
-    background-image: url("../images/img-group.png");
+    background-image: url("../images/webp/img-group.webp");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -307,15 +307,15 @@ p {
 }
 
 .img-1 {
-    background-image: url("../images/img-1.png");
+    background-image: url("../images/webp/img-1.webp");
 }
 
 .img-2 {
-    background-image: url("../images/img-2.png");
+    background-image: url("../images/webp/img-2.webp");
 }
 
 .img-3 {
-    background-image: url("../images/img-3.png");
+    background-image: url("../images/webp/img-3.webp");
 }
 
 .third-screen .content .container .card .info h4 {
@@ -478,15 +478,15 @@ p {
 }
 
 .reviews .swiper-slide .image.wow {
-    background-image: url("../images/wow.png");
+    background-image: url("../images/webp/wow.webp");
 }
 
 .reviews .swiper-slide .image.paysenger {
-    background-image: url("../images/paysenger.png");
+    background-image: url("../images/webp/paysenger.webp");
 }
 
 .reviews .swiper-slide .image.pixelynx {
-    background-image: url("../images/Pixelynx_logo.png");
+    background-image: url("../images/webp/Pixelynx_logo.webp");
 }
 
 .reviews .swiper-slide p {

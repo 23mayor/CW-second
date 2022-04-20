@@ -362,12 +362,13 @@ label {
     .sidebar__content {
         width: 95%;
         height: 100%;
+        padding: 12px 12px;
     }
 
     .sidebar__content h2 {
         font-weight: 600;
         font-size: 30px;
-        line-height: 38px;
+        line-height: 30px;
         margin-bottom: 18px;
     }
 
@@ -378,7 +379,7 @@ label {
     .sidebar__content h4 {
         font-weight: 600;
         font-size: 20px;
-        line-height: 28px;
+        line-height: 20px;
         margin-bottom: 20px;
     }
 
@@ -388,13 +389,21 @@ label {
 
     .sidebar__add-team .flex-container h4 {
         font-size: 20px;
+        line-height: 20px;
     }
 
     .sidebar__add-team .flex-container .counter {
         font-size: 15px;
+        line-height: 15px;
     }
 
     .sidebar__add-team .description {
         font-size: 15px;
+        line-height: 15px;
+        margin-bottom: 15px;
+    }
+
+    .sidebar .validateBtn {
+        margin-top: 20px;
     }
 }
