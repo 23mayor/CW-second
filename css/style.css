@@ -440,6 +440,10 @@ p {
     text-decoration: none;
 }
 
+.sidebar__add-team {
+    display: none;
+}
+
 /* Trusted By */
 .trusted-by {
     margin-top: 320px;
